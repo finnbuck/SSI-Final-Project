@@ -1,0 +1,14 @@
+#N canvas 827 239 527 327 12;
+#X obj 99 76 inlet~;
+#X obj 132 223 outlet~;
+#X obj 220 223 outlet~;
+#X obj 252 174 numbox~ 4 15 100 #E4E4E4 #4D4D4D 10 0 0 0;
+#X obj 115 174 numbox~ 4 15 100 #E4E4E4 #4D4D4D 10 0 0 0;
+#X obj 98 129 expr~ $v1 * cos((\$1 + 1) * 0.7854);
+#X obj 512 135 expr~ $v1 * sin((\$1 + 1) * 0.7854);
+#X connect 0 0 5 0;
+#X connect 0 0 6 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;
